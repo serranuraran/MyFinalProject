@@ -29,7 +29,8 @@ namespace WebAPI.Controllers
         public IActionResult GetAll()
         {
             //Swagger
-            //Dependency chain --
+            //Dependency chain -- bağımlılık zinciri
+            //IoC Container -- Inversion of control -- değişimin kontrolü
             var result = _productService.GetAll();
             if (result.Success)
             {
